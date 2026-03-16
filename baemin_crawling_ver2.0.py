@@ -9,7 +9,7 @@ Original file is located at
 
 ##########################사용자 다운로드 폴더 주소 입력###########################
 
-usersdownload_path = 'C:/Users/01039499766/Downloads/'
+usersdownload_path = 'Your Directory'
 
 #############################################################################
 
@@ -50,10 +50,6 @@ def baemin_crawler():
 
     date_range_str = f'{start_date.strftime("%Y-%m-%d")}_{yesterday.strftime("%Y-%m-%d")}'  
 
-    # 미리 정의된 값들
-    ID = '12345678'
-    PW = '12345678'
-
 
     # Chrome 드라이버 옵션 설정
     chrome_options = webdriver.ChromeOptions()
@@ -69,9 +65,10 @@ def baemin_crawler():
     driver = webdriver.Chrome(options=chrome_options)
 
     url = 'https://self.baemin.com/orders/history'
-
-    ID = 'knockone11'
-    PW = 'shrdnjs11!!'
+    
+    # 미리 정의된 값들
+    ID = 'Your ID'
+    PW = 'Your Password'
 
     #배민 사이트로 이동
     driver.get(url)
